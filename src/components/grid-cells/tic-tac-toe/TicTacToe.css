@@ -1,0 +1,37 @@
+.content-grid .tic-tac-toe-project {
+  grid-column: 4 / 5;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-grid.about .tic-tac-toe-project,
+.content-grid.media .tic-tac-toe-project {
+  opacity: 0.25;
+}
+
+.content-grid.about .tic-tac-toe-project {
+  grid-row: 4 / 6;
+}
+
+.content-grid .tic-tac-toe-project .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.content-grid .tic-tac-toe-project .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.content-grid .tic-tac-toe-project img {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}

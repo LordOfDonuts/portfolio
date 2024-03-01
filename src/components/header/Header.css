@@ -1,0 +1,67 @@
+.main-header {
+  max-width: 1964px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.main-header .logo {
+  font-weight: 900;
+  font-size: 2rem;
+  background: linear-gradient(to top left,#A5FECB,#20BDFF,#5433FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-header .categories-navigation {
+  padding: 0.45rem;
+  border-radius: 3rem;
+  background-color: #ebebeb;
+  transition: background-color 0.2s ease;
+}
+
+body.dark-mode .main-header .categories-navigation {
+  background-color: #111112;
+}
+
+.main-header .categories-navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main-header .categories-navigation li {
+  font-weight: 600;
+  border-radius: 3rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+body.dark-mode .main-header .categories-navigation li {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-header .categories-navigation li:hover {
+  color: var(--primary-black-color);
+}
+
+body.dark-mode .main-header .categories-navigation li:hover {
+  color: var(--primary-white-color);
+}
+
+.main-header .categories-navigation li.active {
+  color: var(--primary-black-color);
+  background-color: var(--primary-white-color);
+}
+
+body.dark-mode .main-header .categories-navigation li.active {
+  color: var(--primary-white-color);
+  background-color: var(--primary-black-color);
+}

@@ -1,0 +1,11 @@
+.project-title .subtitle {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+body.dark-mode .project-title .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,158 @@
+.content-grid .leetcode {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.content-grid.media .leetcode {
+  opacity: 0.25;
+}
+
+.content-grid.about .leetcode {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+.content-grid.projects .leetcode {
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
+
+.content-grid .leetcode .leetcode-title {
+  font-size: 0.75rem;
+}
+
+.content-grid .leetcode .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.content-grid .leetcode .circle {
+  width: 150px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  border: 0.5rem rgba(0, 0, 0, 0.25) solid;
+}
+
+.content-grid .leetcode .total-solved {
+  position: relative;
+  font-weight: 700;
+  font-size: 2.5rem;
+  cursor: default;
+}
+
+.content-grid .leetcode .total-solved .percent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.content-grid .leetcode .total-solved:hover .percent {
+  opacity: 1;
+}
+
+.content-grid .leetcode .total-solved .number {
+  transition: opacity 0.2s ease;
+}
+
+.content-grid .leetcode .total-solved:hover .number {
+  opacity: 0;
+}
+
+.content-grid .leetcode .problems-info-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.content-grid .leetcode .problems-info-list .total-problems {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .content-grid .leetcode .problems-info-list .total-problems {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.content-grid .leetcode .problems-info-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.content-grid .leetcode .problems-info-list .info {
+  position: relative;
+  width: 500px;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.content-grid .leetcode .problems-info-list .difficulty {
+  width: 60px;
+}
+
+.content-grid .leetcode .problems-info-list .problem-data {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.content-grid .leetcode .problems-info-list .bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.content-grid .leetcode .problems-info-list .bar .fill {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+}
+
+.content-grid .leetcode .problems-info-list .bar.easy {
+  background-color: rgba(0, 196, 111, 0.5);
+  box-shadow: 0 0 5px rgba(0, 196, 111, 0.35);
+}
+
+.content-grid .leetcode .problems-info-list .bar.medium {
+  background-color: rgba(255, 108, 34, 0.5);
+  box-shadow: 0 0 5px rgba(255, 108, 34, 0.35);
+}
+
+.content-grid .leetcode .problems-info-list .bar.hard {
+  background-color: rgba(255, 0, 77, 0.5);
+  box-shadow: 0 0 5px rgba(255, 0, 77, 0.35);
+}
+
+.content-grid .leetcode .problems-info-list .bar.easy .fill {
+  background-color: rgb(0, 196, 111);
+  width: 7.14%;
+}
+
+.content-grid .leetcode .problems-info-list .bar.medium .fill {
+  background-color: rgb(255, 108, 34);
+  width: 0.3%;
+}
+
+.content-grid .leetcode .problems-info-list .bar.hard .fill {
+  background-color: rgb(255, 0, 77);
+  width: 0;
+}

@@ -1,0 +1,33 @@
+.content-grid .instagram {
+  grid-column: 1;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  cursor: pointer;
+}
+
+.content-grid.about .instagram, .content-grid.projects .instagram {
+  opacity: 0.25;
+}
+
+.content-grid.media .instagram {
+  grid-row: 2;
+}
+
+.content-grid.about .instagram {
+  grid-row: 5;
+}
+
+.content-grid .instagram-icon {
+  font-size: 8rem;
+  color: #fff;
+}

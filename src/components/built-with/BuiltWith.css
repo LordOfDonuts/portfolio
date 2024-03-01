@@ -1,0 +1,25 @@
+.built-with .subtitle {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+body.dark-mode .built-with .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.built-with ul {
+  list-style-type: none;
+}
+
+.built-with ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.built-with .built-with-icon {
+  font-size: 2rem;
+}

@@ -1,5 +1,17 @@
-body {
+:root {
+  --primary-white-color: #fafafa;
+  --primary-black-color: #1d1d1d;
+  --background-white-color: #f2f7f7;
+  --background-black-color: #1c1c1e;
+}
+
+*, *::before, *::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

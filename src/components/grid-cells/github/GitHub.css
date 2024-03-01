@@ -1,0 +1,28 @@
+.content-grid .github {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-grid.about .github {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.content-grid.media .github {
+  grid-row: 1;
+}
+
+.content-grid.projects .github {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.content-grid .github .github-icon {
+  font-size: 8rem;
+  color: #fff;
+}
