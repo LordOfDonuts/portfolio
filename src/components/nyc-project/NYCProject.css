@@ -1,0 +1,72 @@
+.grid-section.nyc-project {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-section.nyc-project .project-image {
+  object-fit: cover;
+  height: 100%;
+}
+
+.grid-section.nyc-project header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.grid-section.nyc-project .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.grid-section.nyc-project .project-image {
+  width: 410px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1540px) {
+  .grid-section.nyc-project {
+    padding: 1rem;
+  }
+
+  .grid-section.nyc-project .project-image {
+    width: 300px;
+    height: 100%;
+  }
+
+  .grid-section.nyc-project header {
+    gap: 0.5rem;
+  }
+
+  .grid-section.nyc-project .buttons {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-section.nyc-project {
+    gap: 2rem;
+  }
+
+  .grid-section.nyc-project .project-image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .grid-section.nyc-project .buttons {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .grid-section.nyc-project {
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 3rem;
+  }
+}

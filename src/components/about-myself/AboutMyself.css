@@ -1,0 +1,87 @@
+.grid-section.about-myself {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.grid-section.about-myself header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.grid-section.about-myself .emojis {
+  list-style-type: none;
+  width: 170px;
+  height: 170px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  transition: transform 0.25s ease;
+}
+
+.grid-section.about-myself .emojis:hover {
+  transform: scale(1.1);
+}
+
+.grid-section.about-myself .emojis li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.grid-section.about-myself .emojis li.active {
+  opacity: 1;
+}
+
+.grid-section.about-myself .emojis img {
+  height: 100%;
+}
+
+.grid-section.about-myself .my-name-is {
+  font-weight: 600;
+}
+
+.grid-section.about-myself .my-name {
+  font-size: 4.5rem;
+  background: linear-gradient(to top left, #5433ff, #20bdff, #a5fecb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grid-section.about-myself .description {
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1540px) {
+  .grid-section.about-myself {
+    gap: 1.5rem;
+  }
+
+  .grid-section.about-myself .description {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 650px) {  
+  .grid-section.about-myself {
+    padding: 2rem;
+  }
+
+  .grid-section.about-myself .emojis {
+    list-style-type: none;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.25rem;
+  }
+
+  .grid-section.about-myself .my-name {
+    font-size: 2rem;
+  }
+}

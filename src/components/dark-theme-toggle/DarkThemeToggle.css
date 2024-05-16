@@ -1,0 +1,63 @@
+.grid-section.theme-toggle .toggle {
+  position: relative;
+  width: 130px;
+  height: 70px;
+  background-color: var(--background-white-color);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+body.dark-mode .grid-section.theme-toggle .toggle {
+  background-color: var(--secondary-background-black-color);
+}
+
+.grid-section.theme-toggle .toggle .toggle-circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 12px);
+  top: 6px;
+  left: 6px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--section-white-color);
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(0deg);
+  transition: left 0.25s ease, transform 0.25s ease;
+}
+
+body.dark-mode .grid-section.theme-toggle .toggle .toggle-circle {
+  background-color: var(--section-black-color);
+}
+
+.grid-section.theme-toggle .theme-icon {
+  position: absolute;
+  font-size: 1.5rem;
+}
+
+.grid-section.theme-toggle .theme-icon.sun {
+  color: #ff5858;
+  opacity: 1;
+  transition: 0.15s opacity ease;
+}
+
+.grid-section.theme-toggle .toggle.active .theme-icon.sun {
+  opacity: 0;
+}
+
+.grid-section.theme-toggle .theme-icon.moon {
+  transform: rotate(270deg);
+  color: #f4e557;
+  opacity: 0;
+  transition: 0.15s opacity ease;
+}
+
+.grid-section.theme-toggle .toggle.active .theme-icon.moon {
+  opacity: 1;
+}
+
+.grid-section.theme-toggle .toggle.active .toggle-circle {
+  left: 66px;
+  transform: rotate(90deg);
+}

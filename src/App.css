@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.grid-sections {
+  display: grid;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 4rem;
+  margin-bottom: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-section {
+  border-radius: 32px;
+  color: var(--black-text-color);
+  background-color: var(--section-white-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body.dark-mode .grid-section {
+  color: var(--white-text-color);
+  background-color: var(--section-black-color);
+}
+
+.grid-section .project-button {
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  color: var(--black-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 6px solid var(--background-white-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.grid-section .project-button:hover {
+  transform: scale(1.07);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .project-button {
+  color: var(--white-text-color);
+  border: 6px solid var(--background-black-color);
+}
+
+.grid-section .subtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.project-stack-list {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-stack-list li {
+  font-size: 1.5rem;
+}
+
+.grid-section.about-myself {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+
+.grid-section.frontend-developer {
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+}
+
+.grid-section.nyc-project {
+  grid-row: 3 / 4;
+  grid-column: 3 / 5;
+}
+
+.grid-section.tic-tac-toe-project {
+  grid-row: 4 / 6;
+  grid-column: 1 / 2;
+}
+
+.grid-section.dr-oil-project {
+  grid-row: 4 / 6;
+  grid-column: 4 / 5;
+}
+
+.grid-section.contact-information {
+  grid-row: 5 / 6;
+  grid-column: 2 / 4;
+}
+
+.grid-section.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1540px) {
+  .grid-sections {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(5, 250px);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1250px) {
+  .grid-sections {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(10, 250px);
+  }
+
+  .grid-section.about-myself {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .grid-section.frontend-developer {
+    grid-row: 3 / 5;
+    grid-column: 1 / 2;
+  }
+
+  .grid-section.nyc-project {
+    grid-row: unset;
+    grid-column: 1 / 3;
+  }
+
+  .grid-section.tic-tac-toe-project {
+    grid-row: 5 / 7;
+    grid-column: 2 / 3;
+  }
+
+  .grid-section.dr-oil-project {
+    grid-row: 8 / 10;
+    grid-column: unset;
+  }
+
+  .grid-section.contact-information {
+    grid-row: unset;
+    grid-column: 1 / 3;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid-sections {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(11, 200px);
+  }
+
+  .project-image-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-section.nyc-project {
+    grid-row: 7 / 9;
+  }
+
+  .grid-section.dr-oil-project {
+    grid-row: 9 / 11;
+    grid-column: unset;
+  }
+}
+
+
+@media (max-width: 510px) {
+  .grid-sections {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(18, 270px);
+    gap: 2rem;
+  }
+
+  .grid-section.about-myself {
+    grid-row: 1 / 3;
+    grid-column: unset;
+  }
+
+  .grid-section.frontend-developer {
+    grid-row: 3 / 5;
+    grid-column: unset;
+  }
+
+  .grid-section.nyc-project {
+    grid-row: 9 / 11;
+    grid-column: unset;
+  }
+
+  .grid-section.tic-tac-toe-project {
+    grid-row: 11 / 13;
+    grid-column: unset;
+  }
+
+  .grid-section.dr-oil-project {
+    grid-row: 15 / 17;
+    grid-column: unset;
+  }
+
+  .grid-section.contact-information {
+    grid-row: 17 / 19;
+    grid-column: unset;
   }
 }

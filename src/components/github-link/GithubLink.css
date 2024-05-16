@@ -1,0 +1,16 @@
+.grid-section.github-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-black-color);
+  transition: background-color 0.25s ease;
+}
+
+body.dark-mode .grid-section.github-link {
+  background-color: var(--secondary-background-black-color);
+}
+
+.grid-section.github-link .icon {
+  font-size: 8rem;
+  color: var(--white-text-color);
+}

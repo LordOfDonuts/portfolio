@@ -1,0 +1,28 @@
+.contact-button {
+  border-radius: 3rem;
+  padding: 0.75rem 0.25rem;
+  text-decoration: none;
+  color: var(--black-text-color);
+  background: linear-gradient(to top left, #5433ff, #20bdff, #a5fecb);
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+body.dark-mode .contact-button {
+  color: var(--white-text-color);
+}
+
+.contact-button span {
+  border-radius: 3rem;
+  background-color: var(--background-white-color);
+  padding: 0.5rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.contact-button:hover span {
+  color: #20bdff;
+}
+
+body.dark-mode .contact-button span {
+  background-color: var(--black-text-color);
+}

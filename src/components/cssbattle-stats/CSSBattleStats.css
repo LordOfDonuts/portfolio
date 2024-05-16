@@ -1,0 +1,69 @@
+.grid-section.cssbattle-stats {
+  text-decoration: none;
+  padding: 2rem;
+}
+
+.grid-section.cssbattle-stats header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.grid-section.cssbattle-stats header .icon {
+  font-size: 1.25rem;
+}
+
+.grid-section.cssbattle-stats ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.grid-section.cssbattle-stats ul p {
+  font-size: 1.25rem;
+}
+
+.grid-section.cssbattle-stats ul span {
+  font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .grid-section.cssbattle-stats {
+    padding: 1rem;
+  }
+
+  .grid-section.cssbattle-stats header .icon {
+    font-size: 1rem;
+  }
+
+  .grid-section.cssbattle-stats h2 {
+    font-size: 1rem;
+  }
+
+  .grid-section.cssbattle-stats header {
+    margin-bottom: 1rem;
+  }
+
+  .grid-section.cssbattle-stats ul {
+    gap: 1.5rem;
+  }
+
+  .grid-section.cssbattle-stats ul p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .grid-section.cssbattle-stats header {
+    margin-bottom: 1.5rem;
+  }
+
+  .grid-section.cssbattle-stats h2 {
+    font-size: 1.25rem;
+  }
+  .grid-section.cssbattle-stats ul p {
+    font-size: 1.25rem;
+  }  
+}
