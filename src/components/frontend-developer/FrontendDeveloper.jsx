@@ -18,10 +18,6 @@ const FrontendDeveloper = () => {
   return (
     <div className='grid-section frontend-developer'>
       <h2>Frontend Developer</h2>
-      <p>
-        I like to code things from scratch, and enjoy bringing ideas to life in
-        the browser.
-      </p>
       <div className='skills-container'>
         <h3 className='sills-title'>Skills:</h3>
         <ul className='skills-list'>

@@ -7,6 +7,21 @@
   margin-bottom: 10vh;
 }
 
+.grid-sections.about {
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(3, 300px);
+}
+
+.grid-sections.projects {
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+}
+
+.grid-sections.media {
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 300px);
+}
+
 .grid-section {
   border-radius: 32px;
   color: var(--black-text-color);
@@ -60,9 +75,38 @@ body.dark-mode .project-button {
   font-size: 1.5rem;
 }
 
-.grid-section.about-myself {
+body .grid-section.about-myself {
   grid-row: 1 / 3;
   grid-column: 1 / 3;
+}
+
+body .grid-sections.projects .grid-section.about-myself,
+body .grid-sections.projects .grid-section.frontend-developer,
+body .grid-sections.projects .grid-section.instagram-link,
+body .grid-sections.projects .grid-section.linkedin-link,
+body .grid-sections.projects .grid-section.my-photos,
+body .grid-sections.projects .grid-section.contact-information,
+body .grid-sections.projects .grid-section.cssbattle-stats {
+  display: none;
+}
+
+body .grid-sections.about .grid-section.instagram-link,
+body .grid-sections.about .grid-section.linkedin-link,
+body .grid-sections.about .grid-section.contact-information,
+body .grid-sections.about .grid-section.nyc-project,
+body .grid-sections.about .grid-section.tic-tac-toe-project,
+body .grid-sections.about .grid-section.dr-oil-project {
+  display: none;
+}
+
+body .grid-sections.media .grid-section.about-myself,
+body .grid-sections.media .grid-section.frontend-developer,
+body .grid-sections.media .grid-section.nyc-project,
+body .grid-sections.media .grid-section.my-photos,
+body .grid-sections.media .grid-section.tic-tac-toe-project,
+body .grid-sections.media .grid-section.cssbattle-stats,
+body .grid-sections.media .grid-section.dr-oil-project {
+  display: none;
 }
 
 .grid-section.frontend-developer {
@@ -75,8 +119,18 @@ body.dark-mode .project-button {
   grid-column: 3 / 5;
 }
 
+body .grid-sections.projects .grid-section.nyc-project {
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+}
+
 .grid-section.tic-tac-toe-project {
   grid-row: 4 / 6;
+  grid-column: 1 / 2;
+}
+
+body .grid-sections.projects .grid-section.tic-tac-toe-project {
+  grid-row: 1 / 3;
   grid-column: 1 / 2;
 }
 
@@ -85,9 +139,19 @@ body.dark-mode .project-button {
   grid-column: 4 / 5;
 }
 
+body .grid-sections.projects .grid-section.dr-oil-project {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+}
+
 .grid-section.contact-information {
   grid-row: 5 / 6;
   grid-column: 2 / 4;
+}
+
+body .grid-sections.media .grid-section.contact-information {
+  grid-row: unset;
+  grid-column: 1 / 3;
 }
 
 .grid-section.theme-toggle {
@@ -101,12 +165,42 @@ body.dark-mode .project-button {
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(5, 250px);
   }
+
+  .grid-sections.about {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 250px);
+  }
+
+  .grid-sections.projects {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+  }
+
+  .grid-sections.media {
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+  }
 }
 
 @media (max-width: 1250px) {
   .grid-sections {
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(10, 250px);
+  }
+
+  .grid-sections.about {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(5, 250px);
+  }
+
+  .grid-sections.projects {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(4, 250px);
+  }
+
+  .grid-sections.media {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(3, 250px);
   }
 
   .grid-section.about-myself {
@@ -129,6 +223,11 @@ body.dark-mode .project-button {
     grid-column: 2 / 3;
   }
 
+  body .grid-sections.projects .grid-section.nyc-project {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+  }
+
   .grid-section.dr-oil-project {
     grid-row: 8 / 10;
     grid-column: unset;
@@ -146,57 +245,112 @@ body.dark-mode .project-button {
     grid-template-rows: repeat(11, 200px);
   }
 
+  .grid-sections.about {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .grid-sections.projects {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 200px);
+  }
+
+  .grid-sections.media {
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 200px);
+  }
+
   .project-image-link {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .grid-section.nyc-project {
-    grid-row: 7 / 9;
-  }
-
   .grid-section.dr-oil-project {
     grid-row: 9 / 11;
     grid-column: unset;
   }
-}
 
+  .grid-section.nyc-project {
+    grid-row: 7 / 9;
+    grid-column: 1 / 3;
+  }
+
+  body .grid-sections.projects .grid-section.nyc-project {
+    grid-row: 4 / 6;
+    grid-column: 1 / 3;
+  }
+}
 
 @media (max-width: 510px) {
   .grid-sections {
     grid-template-columns: repeat(1, 270px);
-    grid-template-rows: repeat(18, 270px);
+    grid-template-rows: repeat(17, 270px);
     gap: 2rem;
   }
 
-  .grid-section.about-myself {
-    grid-row: 1 / 3;
-    grid-column: unset;
+  .grid-sections.about {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(8, 270px);
   }
 
-  .grid-section.frontend-developer {
+  .grid-sections.projects {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(8, 270px);
+  }
+
+  .grid-sections.media {
+    grid-template-columns: repeat(1, 270px);
+    grid-template-rows: repeat(5, 270px);
+  }
+
+  body .grid-section.about-myself {
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+
+  body .grid-section.frontend-developer {
     grid-row: 3 / 5;
-    grid-column: unset;
+    grid-column: 1;
   }
 
   .grid-section.nyc-project {
     grid-row: 9 / 11;
-    grid-column: unset;
+    grid-column: 1;
+  }
+
+  body .grid-sections.projects .grid-section.nyc-project {
+    grid-row: 5 / 7;
+    grid-column: 1;
   }
 
   .grid-section.tic-tac-toe-project {
-    grid-row: 11 / 13;
-    grid-column: unset;
+    grid-row: 7 / 9;
+    grid-column: 1;
   }
 
   .grid-section.dr-oil-project {
     grid-row: 15 / 17;
-    grid-column: unset;
+    grid-column: 1;
+  }
+
+  body .grid-sections.projects .grid-section.dr-oil-project {
+    grid-row: 7 / 9;
+    grid-column: 1;
   }
 
   .grid-section.contact-information {
     grid-row: 17 / 19;
-    grid-column: unset;
+    grid-column: 1;
+  }
+
+  .grid-section.contact-information {
+    grid-row: 17 / 18;
+    grid-column: 1;
+  }
+
+  body .grid-sections.media  .grid-section.contact-information {
+    grid-row: unset;
+    grid-column: 1;
   }
 }

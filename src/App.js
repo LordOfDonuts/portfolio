@@ -31,17 +31,27 @@ function App() {
     }
   };
 
+  const currentFilterName = () => {
+    let filterName = '';
+
+    if (filterIndex === 1) filterName = 'about';
+    else if (filterIndex === 2) filterName = 'projects';
+    else if (filterIndex === 3) filterName = 'media';
+
+    return filterName;
+  };
+
   return (
     <div>
       <Header filterIndex={filterIndex} setFilterIndex={setFilterIndex} />
-      <div className='grid-sections'>
+      <div className={`grid-sections ${currentFilterName()}`}>
         <AboutMyself />
         <FrontendDeveloper />
         <GithubLink />
         <DarkThemeToggle isDarkTheme={isDarkTheme} changeTheme={changeTheme} />
         <MyPhotos />
         <CSSBattleStats />
-        <NYCProject/>
+        <NYCProject />
         <TicTacToeProjects />
         <LinkedInLink />
         <InstagramLink />

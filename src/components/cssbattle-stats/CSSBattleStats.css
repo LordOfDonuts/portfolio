@@ -29,6 +29,12 @@
   font-weight: 700;
 }
 
+@media (max-width: 1540px) {
+  .grid-section.cssbattle-stats h2 {
+    font-size: 1.25rem;
+  }
+}
+
 @media (max-width: 650px) {
   .grid-section.cssbattle-stats {
     padding: 1rem;

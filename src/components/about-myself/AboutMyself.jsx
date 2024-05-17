@@ -37,10 +37,8 @@ const AboutMyself = () => {
         <h1 className='my-name'>Ivan Buianov</h1>
       </header>
       <p className='description'>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-        laboriosam mollitia similique, repellendus nihil voluptatem
-        exercitationem totam eaque modi provident maiores sint vero asperiores
-        unde odit assumenda sit nemo laudantium!
+        I am a front-end developer based in the US. I like to build
+        websites and bring new ideas to life in the browser.
       </p>
       <ContactButton />
     </div>
