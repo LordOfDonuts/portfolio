@@ -31,11 +31,21 @@ const TicTacToeProjects = () => {
           </ul>
         </div>
       </header>
-      <a href='' className='project-image-link'>
+      <a
+        href='https://ultimate-tic-tac-toe.online/'
+        target='_blank'
+        rel='noreferrer'
+        className='project-image-link'
+      >
         <img src={picture} alt='' className='project-image' />
       </a>
       <div className='buttons'>
-        <a href='' className='project-button'>
+        <a
+          href='https://ultimate-tic-tac-toe.online/'
+          target='_blank'
+          rel='noreferrer'
+          className='project-button'
+        >
           View Project
         </a>
         <a

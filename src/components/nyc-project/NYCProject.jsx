@@ -31,7 +31,12 @@ const NYCProject = () => {
           </ul>
         </div>
         <div className='buttons'>
-          <a href='' className='project-button'>
+          <a
+            href='https://about-new-york-city.online/'
+            target='_blank'
+            rel='noreferrer'
+            className='project-button'
+          >
             View Project
           </a>
           <a
@@ -44,7 +49,11 @@ const NYCProject = () => {
           </a>
         </div>
       </header>
-      <a href=''>
+      <a
+        href='https://about-new-york-city.online/'
+        target='_blank'
+        rel='noreferrer'
+      >
         <img src={picture} alt='' className='project-image' />
       </a>
     </div>
